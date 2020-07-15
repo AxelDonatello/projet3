@@ -1,0 +1,15 @@
+header {
+display: flex;
+justify-content: center;
+background-color: #579C87;
+color: #FFCE00;
+width: 100%;
+font-size: 40px;
+}
+
+footer {
+    display : flex;
+    background-color: #579C87;
+    font-size: 20px;
+    justify-content: space-between;
+}
