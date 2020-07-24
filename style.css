@@ -1,15 +1,72 @@
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
 header {
-display: flex;
-justify-content: center;
-background-color: #579C87;
-color: #FFCE00;
-width: 100%;
-font-size: 40px;
+  background-color: #569D88;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 footer {
-    display : flex;
-    background-color: #579C87;
-    font-size: 20px;
-    justify-content: space-between;
+  background-color: #569D88;
+  color: #F3CB41;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
 }
+
+main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 600px 600px;
+  grid-template-columns: 400px 400px;
+  grid-gap: 50px 50px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 18%;
+  padding-right: 15%;
+}
+
+.bloc-menu {
+  box-shadow: 0 0 13px 3px #ccc;
+  width: 100%;
+  background-color: #FCDFDB;
+}
+
+.bloc-menu-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7em;
+}
+
+.soon-content {
+  width: 50%;
+  background-color: #569D88;
+  border-radius: 10px;
+}
+
+.soon h3 {
+  color: #F3CB41;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
