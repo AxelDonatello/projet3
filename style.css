@@ -1,23 +1,11 @@
-@font-face {
-  font-family: "titillium";
-  src: url(../font/Titillium-Light.otf) format("otf");
-}
+@charset "UTF-8";
 @font-face {
   font-family: "devonshire";
   src: url(../font/Devonshire-Regular.ttf) format(".ttf");
 }
-@font-face {
-  font-family: "balsamiq-Sans";
-  src: url(../font/BalsamiqSans-Regular.ttf) format(".ttf");
-}
-@font-face {
-  font-family: "redressed";
-  src: url(../font/Redressed-webfont.woff) format("woff");
-}
 body {
   margin: 0;
-  font-size: 20px;
-  font-family: "titillium", Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
 
 header {
@@ -27,6 +15,9 @@ header {
   justify-content: center;
   width: 100%;
   height: 150px;
+}
+header .logoomf {
+  width: 100%;
 }
 
 footer {
@@ -47,11 +38,21 @@ footer a {
   color: #F3CB41;
   font-size: 30px;
 }
+@media screen and (max-width: 599px) {
+  footer a {
+    font-size: 20px;
+  }
+}
 
 main {
-  width: 60%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 599px) {
+  main {
+    width: 87%;
+  }
 }
 
 .grid {
@@ -62,6 +63,14 @@ main {
   padding-top: 4%;
   padding-bottom: 4%;
   justify-content: center;
+}
+@media screen and (max-width: 599px) {
+  .grid {
+    grid-template-columns: 80vw;
+    grid-template-rows: 114vw 114vw 114vw 114vw;
+    padding-top: 15%;
+    padding-bottom: 20%;
+  }
 }
 
 .bloc-menu {
@@ -85,24 +94,26 @@ main {
   color: #3D1319;
 }
 .bloc-menu:nth-child(1) a h2 {
-  font-family: "balsamiq-Sans";
+  font-family: "itim";
   font-size: 35px;
   margin-top: 30px;
 }
 
 .bloc-menu:nth-child(2) {
   background-color: #FFF5FE;
-  font-family: "redressed";
 }
 .bloc-menu:nth-child(2) h1 {
   background: #905BFD;
   background: linear-gradient(to left, #905BFD, #D8852E);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 .bloc-menu:nth-child(2) h2 {
   color: #D8852E;
   margin-top: 0;
+  font-weight: bold;
 }
 
 .bloc-menu:nth-child(3) {
@@ -112,6 +123,7 @@ main {
   background: #0887FB;
   background: linear-gradient(to left, #0887FB, #0431DF);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc-menu:nth-child(3) h2 {
@@ -126,6 +138,7 @@ main {
   background: #BFFF7E;
   background: linear-gradient(to left, #BFFF7E, #3D9339);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc-menu:nth-child(4) h2 {
@@ -155,18 +168,54 @@ main {
   justify-content: center;
   padding-bottom: 7em;
 }
+@media screen and (max-width: 599px) {
+  .soon {
+    padding-bottom: 4em;
+  }
+}
 
 .soon-content {
   width: 40%;
   background-color: #569D88;
   border-radius: 10px;
 }
+@media screen and (max-width: 599px) {
+  .soon-content {
+    width: 100%;
+  }
+}
 
+.soon-content__title::after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "…";
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
 .soon h3 {
   color: #F3CB41;
-  text-align: center;
-  font-size: 25px;
-  margin: 25px;
+  font-size: 35px;
+  margin: 5%;
+  padding-left: 10%;
+}
+@media screen and (max-width: 599px) {
+  .soon h3 {
+    font-size: 20px;
+    padding-left: 25%;
+  }
 }
 
 .back {
@@ -177,6 +226,12 @@ main {
   justify-content: center;
   margin-bottom: 10%;
   font-size: 30px;
+}
+@media screen and (max-width: 599px) {
+  .back {
+    margin-bottom: 20%;
+    width: 50%;
+  }
 }
 .back a {
   text-decoration: none;
@@ -204,13 +259,18 @@ main {
   text-align: center;
   width: 100%;
 }
+@media screen and (max-width: 599px) {
+  .page {
+    margin-bottom: 18vw;
+  }
+}
 
 .noteenchantee {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 .noteenchantee .page {
   background-color: #FCDFDB;
@@ -218,40 +278,131 @@ main {
   color: #3D1319;
   padding-top: 60px;
 }
+@media screen and (max-width: 599px) {
+  .noteenchantee .page {
+    padding-top: 30px;
+    margin-bottom: 5%;
+  }
+}
 .noteenchantee .page h1 {
   font-size: 7vmin;
   margin-top: 0;
   font-family: "devonshire";
 }
+@media screen and (max-width: 599px) {
+  .noteenchantee .page h1 {
+    font-size: 11vmin;
+  }
+}
 .noteenchantee .page h2 {
-  font-size: 4.5vmin;
+  font-size: 3.5vmin;
+}
+@media screen and (max-width: 599px) {
+  .noteenchantee .page h2 {
+    font-size: 6.3vmin;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .imgnote2 {
+    width: 78px;
+    height: 73px;
+  }
 }
 
 .titre {
   font-weight: bold;
   text-align: center;
-  font-size: 55px;
+  font-size: 4.8vmin;
   margin-top: 5%;
+}
+@media screen and (max-width: 599px) {
+  .titre {
+    font-size: 5.8vmin;
+  }
 }
 
 .page-entree {
   width: 100%;
+  margin-bottom: 3%;
 }
 .page-entree .page-entree-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 599px) {
+  .page-entree .page-entree-content {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+  }
+}
+
+.page-entree-titre {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-entree-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.page-entree-titre h2:hover {
+  background-size: 100% 100%;
+}
+
+.page-plat-titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-plat-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.page-plat-titre h2:hover {
+  background-size: 100% 100%;
+}
+
+.page-dessert-titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-dessert-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.page-dessert-titre h2:hover {
+  background-size: 100% 100%;
 }
 
 .prix {
   font-weight: bold;
 }
+@media screen and (max-width: 599px) {
+  .prix {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 
 .page-plat {
   width: 100%;
+  margin-bottom: 3%;
 }
 .page-plat .page-plat-content {
   display: flex;
@@ -261,25 +412,259 @@ main {
   margin-right: 10%;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 599px) {
+  .page-plat .page-plat-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 
 .plat {
   text-align: left;
   min-width: 60%;
 }
+@media screen and (max-width: 599px) {
+  .plat {
+    text-align: center;
+  }
+}
 
 .page-dessert {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .page-dessert .page-dessert-content {
   margin-left: 10%;
   margin-right: 10%;
+}
+@media screen and (max-width: 599px) {
+  .page-dessert .page-dessert-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .piedpage {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3%;
+  font-size: 3vmin;
+  font-family: "devonshire";
+}
+@media screen and (max-width: 599px) {
+  .piedpage {
+    font-size: 8vmin;
+  }
+}
+
+.stickleft {
+  width: 27%;
+  justify-content: left;
+}
+
+.stickright {
+  width: 27%;
+  justify-content: right;
+}
+
+.traitgauche {
+  width: 100%;
+  height: 1rem;
+}
+@media screen and (max-width: 599px) {
+  .traitgauche {
+    width: 110%;
+    height: 0.5rem;
+  }
+}
+
+.traitdroit {
+  width: 100%;
+  height: 1rem;
+}
+@media screen and (max-width: 599px) {
+  .traitdroit {
+    width: 110%;
+    height: 0.5rem;
+  }
+}
+
+.chicfrancais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.chicfrancais .page {
+  background-color: #FFF5FE;
+}
+.chicfrancais .page h1 {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  font-size: 6vmin;
+  background: #905BFD;
+  background: linear-gradient(to left, #905BFD, #D8852E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 599px) {
+  .chicfrancais .page h1 {
+    font-size: 9vmin;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+.chicfrancais .page .page-entree {
+  color: #d8852e;
+}
+.chicfrancais .page .page-entree .page-entree-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #D8852E 0%, #D8852E 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .chicfrancais .page .page-entree .page-entree-titre h2 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+.chicfrancais .page .page-entree .page-entree-titre h2:hover {
+  background-size: 100% 100%;
+}
+.chicfrancais .page .page-plat {
+  color: #A56799;
+}
+.chicfrancais .page .page-plat .page-plat-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #A56799 0%, #A56799 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .chicfrancais .page .page-plat .page-plat-titre h2 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+.chicfrancais .page .page-plat .page-plat-titre h2:hover {
+  background-size: 100% 100%;
+}
+.chicfrancais .page .page-dessert {
+  color: #905BFD;
+}
+.chicfrancais .page .page-dessert .page-dessert-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #905BFD 0%, #905BFD 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .chicfrancais .page .page-dessert .page-dessert-titre h2 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+.chicfrancais .page .page-dessert .page-dessert-titre h2:hover {
+  background-size: 100% 100%;
+}
+
+.delicepapille {
+  margin-bottom: 5%;
+}
+.delicepapille .page {
+  background-color: #F9F9F9;
+}
+.delicepapille .page h1 {
+  font-size: 60px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: #0887FB;
+  background: linear-gradient(to left, #0887FB, #0431DF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.delicepapille .page .page-entree-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #0431DF 0%, #0431DF 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.delicepapille .page .page-entree-titre h2:hover {
+  background-size: 100% 100%;
+}
+.delicepapille .page .page-plat-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #0170F3 0%, #0170F3 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.delicepapille .page .page-plat-titre h2:hover {
+  background-size: 100% 100%;
+}
+.delicepapille .page .page-dessert-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #0887FB 0%, #0887FB 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.delicepapille .page .page-dessert-titre h2:hover {
+  background-size: 100% 100%;
+}
+.delicepapille .page .page-dessert-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap;
+}
+
+.palettegout {
+  margin-bottom: 5%;
+}
+.palettegout .page {
+  background-color: #FDFFFC;
+}
+.palettegout .page h1 {
+  font-size: 60px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: #BFFF7E;
+  background: linear-gradient(to left, #BFFF7E, #3D9339);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.palettegout .page .page-entree-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.palettegout .page .page-entree-titre h2:hover {
+  background-size: 100% 100%;
+}
+.palettegout .page .page-plat-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.palettegout .page .page-plat-titre h2:hover {
+  background-size: 100% 100%;
+}
+.palettegout .page .page-dessert-titre h2 {
+  text-decoration: none;
+  background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.palettegout .page .page-dessert-titre h2:hover {
+  background-size: 100% 100%;
+}
+.palettegout .page .page-dessert-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap;
 }
 
 .mentions:hover {
