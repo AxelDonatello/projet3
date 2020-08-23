@@ -102,6 +102,11 @@ main {
 .bloc-menu:nth-child(2) {
   background-color: #FFF5FE;
 }
+@media screen and (max-width: 599px) {
+  .bloc-menu:nth-child(2) {
+    font-size: 20px;
+  }
+}
 .bloc-menu:nth-child(2) h1 {
   background: #905BFD;
   background: linear-gradient(to left, #905BFD, #D8852E);
@@ -119,6 +124,11 @@ main {
 .bloc-menu:nth-child(3) {
   background-color: #F9F9F9;
 }
+@media screen and (max-width: 599px) {
+  .bloc-menu:nth-child(3) {
+    font-size: 20px;
+  }
+}
 .bloc-menu:nth-child(3) h1 {
   background: #0887FB;
   background: linear-gradient(to left, #0887FB, #0431DF);
@@ -133,6 +143,11 @@ main {
 
 .bloc-menu:nth-child(4) {
   background-color: #FDFFFC;
+}
+@media screen and (max-width: 599px) {
+  .bloc-menu:nth-child(4) {
+    font-size: 20px;
+  }
 }
 .bloc-menu:nth-child(4) h1 {
   background: #BFFF7E;
@@ -181,7 +196,7 @@ main {
 }
 @media screen and (max-width: 599px) {
   .soon-content {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -214,7 +229,7 @@ main {
 @media screen and (max-width: 599px) {
   .soon h3 {
     font-size: 20px;
-    padding-left: 25%;
+    padding-left: 22%;
   }
 }
 
@@ -397,6 +412,7 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 20px;
   }
 }
 
@@ -426,6 +442,7 @@ main {
 @media screen and (max-width: 599px) {
   .plat {
     text-align: center;
+    font-size: 20px;
   }
 }
 
@@ -462,10 +479,20 @@ main {
   width: 27%;
   justify-content: left;
 }
+@media screen and (max-width: 599px) {
+  .stickleft {
+    width: 20%;
+  }
+}
 
 .stickright {
   width: 27%;
   justify-content: right;
+}
+@media screen and (max-width: 599px) {
+  .stickright {
+    width: 20%;
+  }
 }
 
 .traitgauche {
@@ -527,7 +554,7 @@ main {
 }
 @media screen and (max-width: 599px) {
   .chicfrancais .page .page-entree .page-entree-titre h2 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 900;
   }
 }
@@ -544,7 +571,7 @@ main {
 }
 @media screen and (max-width: 599px) {
   .chicfrancais .page .page-plat .page-plat-titre h2 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 900;
   }
 }
@@ -561,7 +588,7 @@ main {
 }
 @media screen and (max-width: 599px) {
   .chicfrancais .page .page-dessert .page-dessert-titre h2 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 900;
   }
 }
@@ -570,6 +597,10 @@ main {
 }
 
 .delicepapille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 5%;
 }
 .delicepapille .page {
@@ -585,10 +616,20 @@ main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 599px) {
+  .delicepapille .page h1 {
+    font-size: 9vmin;
+  }
+}
 .delicepapille .page .page-entree-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #0431DF 0%, #0431DF 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .delicepapille .page .page-entree-titre h2 {
+    font-size: 20px;
+  }
 }
 .delicepapille .page .page-entree-titre h2:hover {
   background-size: 100% 100%;
@@ -598,13 +639,29 @@ main {
   background: linear-gradient(to top, #0170F3 0%, #0170F3 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
+@media screen and (max-width: 599px) {
+  .delicepapille .page .page-plat-titre h2 {
+    font-size: 20px;
+  }
+}
 .delicepapille .page .page-plat-titre h2:hover {
   background-size: 100% 100%;
+}
+@media screen and (max-width: 599px) {
+  .delicepapille .page .page-plat-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .delicepapille .page .page-dessert-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #0887FB 0%, #0887FB 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .delicepapille .page .page-dessert-titre h2 {
+    font-size: 20px;
+  }
 }
 .delicepapille .page .page-dessert-titre h2:hover {
   background-size: 100% 100%;
@@ -617,8 +674,19 @@ main {
   margin-right: 10%;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 599px) {
+  .delicepapille .page .page-dessert-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .palettegout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 5%;
 }
 .palettegout .page {
@@ -634,10 +702,20 @@ main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 599px) {
+  .palettegout .page h1 {
+    font-size: 9vmin;
+  }
+}
 .palettegout .page .page-entree-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .palettegout .page .page-entree-titre h2 {
+    font-size: 20px;
+  }
 }
 .palettegout .page .page-entree-titre h2:hover {
   background-size: 100% 100%;
@@ -647,13 +725,30 @@ main {
   background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
+@media screen and (max-width: 599px) {
+  .palettegout .page .page-plat-titre h2 {
+    font-size: 20px;
+  }
+}
 .palettegout .page .page-plat-titre h2:hover {
   background-size: 100% 100%;
+}
+@media screen and (max-width: 599px) {
+  .palettegout .page .page-plat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .palettegout .page .page-dessert-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .palettegout .page .page-dessert-titre h2 {
+    font-size: 20px;
+  }
 }
 .palettegout .page .page-dessert-titre h2:hover {
   background-size: 100% 100%;
@@ -665,6 +760,13 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 599px) {
+  .palettegout .page .page-dessert-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .mentions:hover {
