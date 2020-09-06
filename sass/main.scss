@@ -42,10 +42,21 @@ $breakpoints: (
     src: url(../font/Montserrat-Medium.ttf) format('.ttf');
 }
 @font-face{
-    font-family: 'merienda';
-    src: url(../font/Merienda-Regular.ttf) format('.ttf');
+    font-family: 'Croissant One', cursive;
+    src: url(../font/CroissantOne-Regular.ttf) format('.ttf');
 }
-
+@font-face{
+    font-family: 'Balsamiq Sans', cursive;
+    src: url(../font/BalsamiqSans-Regular.ttf) format('.ttf');
+}
+@font-face{
+    font-family: 'Dancing Script', cursive;
+    src: url(../font/DancingScript-Regular.ttf) format('.ttf');
+}
+@font-face{
+    font-family: 'Kalam', cursive;
+    src: url(../font/Kalam-Regular.ttf) format('.ttf');
+}
 @mixin heading {
     background-color: $bgcolor;
     display: flex;
@@ -146,12 +157,18 @@ main{
 .bloc-menu:nth-child(1){
     background-color: $bgenchante;
     font-family: 'devonshire';
-    font-size: 25px;
+    font-size: 35px;
     line-height: 10px;
+    @include tablet{
+    font-size: 25px;
+    }
+    @include mobile-small{
+    font-size: 25px;
+    }
     a{
       color: #3D1319;
         h2{
-        font-family: 'montserrat';
+        font-family: 'balsamiq Sans';
         font-size: 35px;
         margin-top: 30px;
         }  
@@ -176,7 +193,17 @@ main{
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
-        font-family: 'merienda';   
+        font-family: 'Croissant One', cursive;
+        font-size: 30px;
+        @include tablet{
+        font-size: 23px;
+        }
+        @include mobile-only{
+        font-size: 25px;
+        }
+        @include mobile-small{
+        font-size: 20px;
+        }
     }
         h2{
         color: #D8852E;
@@ -202,10 +229,19 @@ main{
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script';
+        font-size: 40px;
+        @include tablet{
+        font-size: 35px;
+        }
+        @include mobile-small{
+        font-size: 30px;
+        }
     }
     h2{ 
         color: #0431DF;
-        margin-top: 0; 
+        margin-top: 0;
+        font-family: 'Balsamiq Sans'; 
     }
 }
 
@@ -226,10 +262,22 @@ main{
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: 'Kalam', cursive;
+        font-size: 40px;
+        @include tablet{
+        font-size: 35px;
+        }
+        @include mobile-only{
+        font-size: 30px;
+        }
+        @include mobile-small{
+        font-size: 30px;
+        }
     }
     h2{
         color: #3D9339;
-        margin-top: 0; 
+        margin-top: 0;
+        font-family: 'Balsamiq Sans'; 
     }
 }
 
@@ -385,6 +433,7 @@ main{
         }
         h2 {
             font-size: 3.5vmin;
+            font-family: '';
             @include mobile-only{
                 font-size: 6.3vmin;
             }

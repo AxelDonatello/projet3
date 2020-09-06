@@ -8,8 +8,20 @@
   src: url(../font/Montserrat-Medium.ttf) format(".ttf");
 }
 @font-face {
-  font-family: "merienda";
-  src: url(../font/Merienda-Regular.ttf) format(".ttf");
+  font-family: "Croissant One", cursive;
+  src: url(../font/CroissantOne-Regular.ttf) format(".ttf");
+}
+@font-face {
+  font-family: "Balsamiq Sans", cursive;
+  src: url(../font/BalsamiqSans-Regular.ttf) format(".ttf");
+}
+@font-face {
+  font-family: "Dancing Script", cursive;
+  src: url(../font/DancingScript-Regular.ttf) format(".ttf");
+}
+@font-face {
+  font-family: "Kalam", cursive;
+  src: url(../font/Kalam-Regular.ttf) format(".ttf");
 }
 body {
   margin: 0;
@@ -117,14 +129,24 @@ main {
 .bloc-menu:nth-child(1) {
   background-color: #FCDFDB;
   font-family: "devonshire";
-  font-size: 25px;
+  font-size: 35px;
   line-height: 10px;
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .bloc-menu:nth-child(1) {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bloc-menu:nth-child(1) {
+    font-size: 25px;
+  }
 }
 .bloc-menu:nth-child(1) a {
   color: #3D1319;
 }
 .bloc-menu:nth-child(1) a h2 {
-  font-family: "montserrat";
+  font-family: "balsamiq Sans";
   font-size: 35px;
   margin-top: 30px;
 }
@@ -154,7 +176,23 @@ main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-family: "merienda";
+  font-family: "Croissant One", cursive;
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .bloc-menu:nth-child(2) h1 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .bloc-menu:nth-child(2) h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bloc-menu:nth-child(2) h1 {
+    font-size: 20px;
+  }
 }
 .bloc-menu:nth-child(2) h2 {
   color: #D8852E;
@@ -186,10 +224,23 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script";
+  font-size: 40px;
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .bloc-menu:nth-child(3) h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bloc-menu:nth-child(3) h1 {
+    font-size: 30px;
+  }
 }
 .bloc-menu:nth-child(3) h2 {
   color: #0431DF;
   margin-top: 0;
+  font-family: "Balsamiq Sans";
 }
 
 .bloc-menu:nth-child(4) {
@@ -216,10 +267,28 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Kalam", cursive;
+  font-size: 40px;
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .bloc-menu:nth-child(4) h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .bloc-menu:nth-child(4) h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bloc-menu:nth-child(4) h1 {
+    font-size: 30px;
+  }
 }
 .bloc-menu:nth-child(4) h2 {
   color: #3D9339;
   margin-top: 0;
+  font-family: "Balsamiq Sans";
 }
 
 .bloc-menu-detail {
@@ -398,6 +467,7 @@ main {
 }
 .noteenchantee .page h2 {
   font-size: 3.5vmin;
+  font-family: "";
 }
 @media screen and (max-width: 599px) {
   .noteenchantee .page h2 {
