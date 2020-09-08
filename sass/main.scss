@@ -57,6 +57,10 @@ $breakpoints: (
     font-family: 'Kalam', cursive;
     src: url(../font/Kalam-Regular.ttf) format('.ttf');
 }
+@font-face{
+    font-family: 'Merienda', cursive;
+    src: url(../font/Merienda-Regular.ttf) format('.ttf');
+}
 @mixin heading {
     background-color: $bgcolor;
     display: flex;
@@ -413,7 +417,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
     .page {
         background-color: $bgenchante;
         margin-top: 3%;
@@ -433,7 +438,7 @@ main{
         }
         h2 {
             font-size: 3.5vmin;
-            font-family: '';
+            font-family: 'Merienda', cursive;
             @include mobile-only{
                 font-size: 6.3vmin;
             }
@@ -453,6 +458,7 @@ main{
     text-align: center;
     font-size: 4.8vmin;
     margin-top: 5%;
+    font-family: 'montserrat';
     @include mobile-only{
         font-size: 5.8vmin;   
     }

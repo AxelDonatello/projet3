@@ -23,6 +23,10 @@
   font-family: "Kalam", cursive;
   src: url(../font/Kalam-Regular.ttf) format(".ttf");
 }
+@font-face {
+  font-family: "Merienda", cursive;
+  src: url(../font/Merienda-Regular.ttf) format(".ttf");
+}
 body {
   margin: 0;
   font-size: 25px;
@@ -441,7 +445,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 20px;
+  font-family: "Merienda", cursive;
 }
 .noteenchantee .page {
   background-color: #FCDFDB;
@@ -467,7 +472,7 @@ main {
 }
 .noteenchantee .page h2 {
   font-size: 3.5vmin;
-  font-family: "";
+  font-family: "Merienda", cursive;
 }
 @media screen and (max-width: 599px) {
   .noteenchantee .page h2 {
@@ -487,6 +492,7 @@ main {
   text-align: center;
   font-size: 4.8vmin;
   margin-top: 5%;
+  font-family: "montserrat";
 }
 @media screen and (max-width: 599px) {
   .titre {
