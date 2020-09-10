@@ -27,6 +27,18 @@
   font-family: "Merienda", cursive;
   src: url(../font/Merienda-Regular.ttf) format(".ttf");
 }
+@font-face {
+  font-family: "Scheherazade", serif;
+  src: url(../font/Scheherazade-Regular.ttf) format(".ttf");
+}
+@font-face {
+  font-family: "Kaushan Script", cursive;
+  src: url(../font/KaushanScript-Regular.ttf) format(".ttf");
+}
+@font-face {
+  font-family: "Architects Daughter", cursive;
+  src: url(../font/ArchitectsDaughter-Regular.ttf) format(".ttf");
+}
 body {
   margin: 0;
   font-size: 25px;
@@ -271,7 +283,7 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Kalam", cursive;
+  font-family: "Kaushan Script", cursive;
   font-size: 40px;
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -580,7 +592,7 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -620,7 +632,7 @@ main {
 @media screen and (max-width: 599px) {
   .plat {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -707,6 +719,7 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 5%;
+  font-family: "Scheherazade", serif;
 }
 .chicfrancais .page {
   background-color: #FFF5FE;
@@ -714,7 +727,7 @@ main {
 .chicfrancais .page h1 {
   margin-top: 20%;
   margin-bottom: 10%;
-  font-size: 6vmin;
+  font-size: 80px;
   background: #905BFD;
   background: linear-gradient(to left, #905BFD, #D8852E);
   -webkit-background-clip: text;
@@ -750,6 +763,9 @@ main {
 .chicfrancais .page .page-entree .page-entree-titre h2:hover {
   background-size: 100% 100%;
 }
+.chicfrancais .page .page-entree .page-entree-content {
+  font-size: 30px;
+}
 .chicfrancais .page .page-plat {
   color: #A56799;
 }
@@ -771,6 +787,14 @@ main {
 }
 .chicfrancais .page .page-plat .page-plat-titre h2:hover {
   background-size: 100% 100%;
+}
+.chicfrancais .page .page-plat .page-plat-content {
+  font-size: 30px;
+}
+@media screen and (max-width: 599px) {
+  .chicfrancais .page .page-plat .page-plat-content {
+    flex-direction: column;
+  }
 }
 .chicfrancais .page .page-dessert {
   color: #905BFD;
@@ -794,6 +818,9 @@ main {
 .chicfrancais .page .page-dessert .page-dessert-titre h2:hover {
   background-size: 100% 100%;
 }
+.chicfrancais .page .page-dessert .page-dessert-content {
+  font-size: 30px;
+}
 
 .delicepapille {
   display: flex;
@@ -801,12 +828,13 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 5%;
+  font-family: "Kalam", cursive;
 }
 .delicepapille .page {
   background-color: #F9F9F9;
 }
 .delicepapille .page h1 {
-  font-size: 60px;
+  font-size: 80px;
   padding-top: 10%;
   padding-bottom: 10%;
   background: #0887FB;
@@ -814,6 +842,7 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
 }
 @media screen and (max-width: 599px) {
   .delicepapille .page h1 {
@@ -824,6 +853,7 @@ main {
   text-decoration: none;
   background: linear-gradient(to top, #0431DF 0%, #0431DF 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+  font-size: 30px;
 }
 @media screen and (max-width: 599px) {
   .delicepapille .page .page-entree-titre h2 {
@@ -838,10 +868,17 @@ main {
 .delicepapille .page .page-entree-titre h2:hover {
   background-size: 100% 100%;
 }
+.delicepapille .page .page-entree-content {
+  font-size: 20px;
+}
+.delicepapille .page .page-entree-content .plat {
+  height: 20px;
+}
 .delicepapille .page .page-plat-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #0170F3 0%, #0170F3 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+  font-size: 30px;
 }
 @media screen and (max-width: 599px) {
   .delicepapille .page .page-plat-titre h2 {
@@ -856,6 +893,9 @@ main {
 .delicepapille .page .page-plat-titre h2:hover {
   background-size: 100% 100%;
 }
+.delicepapille .page .page-plat-content {
+  font-size: 20px;
+}
 @media screen and (max-width: 599px) {
   .delicepapille .page .page-plat-content {
     display: flex;
@@ -866,6 +906,7 @@ main {
   text-decoration: none;
   background: linear-gradient(to top, #0887FB 0%, #0887FB 10%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
+  font-size: 30px;
 }
 @media screen and (max-width: 599px) {
   .delicepapille .page .page-dessert-titre h2 {
@@ -887,6 +928,7 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   flex-wrap: wrap;
+  font-size: 20px;
 }
 @media screen and (max-width: 599px) {
   .delicepapille .page .page-dessert-content {
@@ -910,11 +952,13 @@ main {
 }
 .palettegout .page {
   background-color: #FDFFFC;
+  font-family: "Architects Daughter", cursive;
 }
 .palettegout .page h1 {
-  font-size: 60px;
+  font-size: 80px;
+  font-family: "Kaushan Script", cursive;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   background: #BFFF7E;
   background: linear-gradient(to left, #BFFF7E, #3D9339);
   -webkit-background-clip: text;
@@ -944,6 +988,9 @@ main {
 .palettegout .page .page-entree-titre h2:hover {
   background-size: 100% 100%;
 }
+.palettegout .page .page-entree-content {
+  font-size: 20px;
+}
 .palettegout .page .page-plat-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #BFFF7E 0%, #BFFF7E 10%, transparent 1%) no-repeat left bottom/0 100%;
@@ -961,6 +1008,9 @@ main {
 }
 .palettegout .page .page-plat-titre h2:hover {
   background-size: 100% 100%;
+}
+.palettegout .page .page-plat-content {
+  font-size: 20px;
 }
 @media screen and (max-width: 599px) {
   .palettegout .page .page-plat-content {
@@ -993,6 +1043,7 @@ main {
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 20px;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 599px) {
