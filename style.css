@@ -849,6 +849,11 @@ main {
     font-size: 9vmin;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .delicepapille .page h1 {
+    font-size: 9vmin;
+  }
+}
 .delicepapille .page .page-entree-titre h2 {
   text-decoration: none;
   background: linear-gradient(to top, #0431DF 0%, #0431DF 10%, transparent 1%) no-repeat left bottom/0 100%;
