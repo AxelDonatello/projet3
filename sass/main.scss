@@ -205,9 +205,8 @@ main{
     h1{
         background: #905BFD;
         background: linear-gradient(to left, #905BFD, #D8852E);
-        -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -text-fill-color: transparent;
         font-weight: bold;
         font-family: 'Croissant One', cursive;
         font-size: 30px;
@@ -215,7 +214,7 @@ main{
         font-size: 23px;
         }
         @include mobile-only{
-        font-size: 25px;
+        font-size: 24px;
         }
         @include mobile-small{
         font-size: 20px;
@@ -242,9 +241,8 @@ main{
     h1{
         background: #0887FB;
         background: linear-gradient(to left, #0887FB, #0431DF);
-        -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -text-fill-color: transparent;
         font-family: 'Dancing Script';
         font-size: 40px;
         @include tablet{
@@ -275,9 +273,8 @@ main{
     h1{
         background: #BFFF7E;
         background: linear-gradient(to left, #BFFF7E, #3D9339);
-        -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -text-fill-color: transparent;
         font-family: 'Kaushan Script', cursive;
         font-size: 40px;
         @include tablet{
@@ -344,20 +341,13 @@ main{
 .soon-content__title::after{
     overflow: hidden;
     display: inline-block;
-    vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+    vertical-align: bottom;     
     animation: ellipsis steps(4,end) 900ms infinite;
     content: "\2026";
     width: 0px;
 }
 
 @keyframes ellipsis {
-    to {
-      width: 1.25em;    
-    }
-  }
-  
-  @-webkit-keyframes ellipsis {
     to {
       width: 1.25em;    
     }
@@ -664,9 +654,8 @@ main{
             font-size: 80px;
             background: #905BFD;
             background: linear-gradient(to left, #905BFD, #D8852E);
-            -webkit-background-clip: text;
             background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -text-fill-color: transparent;
             @include mobile-only{
             font-size: 9vmin;
             margin-top: 10%;
@@ -763,9 +752,8 @@ main{
             padding-bottom: 10%;
             background: #0887FB;
             background: linear-gradient(to left, #0887FB, #0431DF);
-            -webkit-background-clip: text;
             background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -text-fill-color: transparent;
             font-family: 'Dancing Script', cursive;
             @include mobile-only{
             font-size: 9vmin;
@@ -874,9 +862,8 @@ main{
             padding-bottom: 5%;
             background: #BFFF7E;
             background: linear-gradient(to left, #BFFF7E, #3D9339);
-            -webkit-background-clip: text;
             background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -text-fill-color: transparent;
             @include mobile-only{
             font-size: 9vmin;
             }
